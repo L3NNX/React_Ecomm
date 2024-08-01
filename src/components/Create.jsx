@@ -31,7 +31,7 @@ const Create = () => {
         console.log(products)
         setProducts([...products, product])
         localStorage.setItem(
-            "product",
+            "products",
             JSON.stringify([...products, product])
         );
         toast.success("Product added successfully")
