@@ -4,6 +4,7 @@ import Home  from "./components/Home"
 import Details from './components/Details'
 import Edit from './components/Edit'
 import Create from './components/Create'
+import Cart from './components/Cart'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path ="/create" element={<Create/>} />
         <Route path ="/details/:id" element={<Details/>} />
         <Route path ="/edit/:id" element={<Edit/>} />
+        <Route path ="/cart" element={<Cart/>} />
       </Routes>
     </div>
   )

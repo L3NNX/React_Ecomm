@@ -1,9 +1,12 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ProductContext } from '../utils/Context';
+import { CartContext } from '../utils/CartContext';
 
 function Nav({ products }) {
     const uniqueCategories = [...new Set(products.map(product => product.category))];
     const { setSelectedCategory } = useContext(ProductContext);
+    const { getTotalItems } = useContext(CartContext);
 
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
@@ -11,9 +14,14 @@ function Nav({ products }) {
 
     return (
         <nav className='w-full md:w-[15%] h-auto bg-[#f0fdfa] flex flex-col items-center pt-5'>
-            <a href="/create" className="px-2 py-3 border border-blue-200 rounded text-blue-300 mb-4">
-                Add New Product
-            </a>
+            <div className='flex flex-col gap-2 w-[80%] mb-4'>
+                <a href="/create" className="px-2 py-3 border border-blue-200 rounded text-blue-300 text-center">
+                    Add New Product
+                </a>
+                <Link to="/cart" className="px-2 py-3 border border-green-200 rounded text-green-600 text-center relative">
+                    Cart ({getTotalItems()})
+                </Link>
+            </div>
 
             <hr className='my-3 w-[80%]' />
 

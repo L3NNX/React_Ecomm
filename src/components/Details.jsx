@@ -33,9 +33,12 @@ const Details = () => {
   };
 
   return product ? (
-    <div className="w-screen flex h-full  justify-center items-center p-12 m-auto">
+    <div className="w-screen flex flex-col h-full justify-center items-center p-12 m-auto">
+      <button onClick={() => navigate("/")} className="self-start mb-6 text-blue-600 hover:text-blue-800 font-semibold">
+        ← Back
+      </button>
 
-      <div className='flex  w-full h-[23rem] gap-10 justify-center'>
+      <div className='flex w-full h-[23rem] gap-10 justify-center'>
 
         <div className='h-full '>
           <img className="object-cover w-full h-full"
