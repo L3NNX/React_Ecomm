@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-color: #F9F8F4;
+  color: #2D3A31;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.botanical-text-gradient {
+  @apply text-botanical-fg;
+}
+
+.botanical-input {
+  @apply bg-botanical-secondary bg-opacity-40 border-0 border-b-2 border-botanical-primary rounded-full px-4 py-2 focus:outline-none focus:border-botanical-accent transition-colors duration-300;
+}
+
+.botanical-input-light {
+  @apply bg-botanical-secondary bg-opacity-30 border border-botanical-border rounded-3xl px-4 py-2 focus:outline-none focus:border-botanical-primary focus:bg-white transition-all duration-300;
+}
+
+.botanical-button-primary {
+  @apply bg-botanical-fg text-white rounded-full px-6 py-2 font-medium tracking-widest uppercase text-sm hover:bg-opacity-90 transition-all duration-300 hover:shadow-botanical-md;
+}
+
+.botanical-button-secondary {
+  @apply border border-botanical-primary text-botanical-primary rounded-full px-6 py-2 font-medium tracking-widest uppercase text-sm hover:bg-botanical-primary hover:bg-opacity-10 transition-all duration-300;
+}
+
+.botanical-button-accent {
+  @apply bg-botanical-accent text-white rounded-full px-6 py-2 font-medium tracking-widest uppercase text-sm hover:opacity-90 transition-all duration-300 hover:shadow-botanical-md;
+}
+
+.botanical-card {
+  @apply bg-white rounded-3xl shadow-botanical hover:shadow-botanical-lg transition-all duration-500 hover:-translate-y-1;
+}
+
+.botanical-card-secondary {
+  @apply bg-botanical-secondary bg-opacity-30 rounded-3xl shadow-botanical hover:shadow-botanical-md transition-all duration-500;
+}
