@@ -46,7 +46,7 @@ const Edit = () => {
     }
 
     return (
-        <div className="w-full md:w-[85%] min-h-screen bg-botanical-bg overflow-y-auto">
+        <div className="w-full md:w-full min-h-screen bg-botanical-bg">
             <div className="max-w-2xl mx-auto px-4 md:px-8 py-8 md:py-16">
                 <button
                     onClick={() => navigate("/")}
