@@ -9,7 +9,8 @@ import Cart from './components/Cart'
 
 function App() {
   return (
-    <div className='h-screen w-screen flex bg-botanical-bg'>
+    <div className='min-h-screen w-full bg-botanical-bg relative'>
+      {/* Noise Texture Overlay */}
       <div
         className="pointer-events-none fixed inset-0 z-50 opacity-[0.015]"
         style={{
@@ -18,14 +19,17 @@ function App() {
         }}
       />
 
-      <Routes>
-        <Route path ="/" element={<Landing/>} />
-        <Route path ="/products" element={<Home/>} />
-        <Route path ="/create" element={<Create/>} />
-        <Route path ="/details/:id" element={<Details/>} />
-        <Route path ="/edit/:id" element={<Edit/>} />
-        <Route path ="/cart" element={<Cart/>} />
-      </Routes>
+      {/* Main Content */}
+      <div className="relative z-10">
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/products" element={<Home />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/details/:id" element={<Details />} />
+          <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
     </div>
   )
 }

@@ -4,9 +4,9 @@ import { Mail, Phone, MapPin, Heart, Share2, MessageSquare, Send } from 'lucide-
 
 function Footer() {
     return (
-        <footer className="bg-botanical-secondary bg-opacity-30 border-t border-botanical-border mt-20">
-            <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <footer className="bg-botanical-secondary bg-opacity-30 border-t border-botanical-border">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                     <div>
                         <h3 className="font-serif text-xl text-botanical-fg mb-6">About Us</h3>
                         <p className="text-botanical-fg text-opacity-70 text-sm leading-relaxed">
@@ -15,7 +15,7 @@ function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="font-serif text-xl text-botanical-fg mb-6">Shop</h3>
+                        <h3 className="font-serif text-xl text-botanical-fg mb-4">Shop</h3>
                         <ul className="space-y-3">
                             <li>
                                 <Link to="/dashboard" className="text-botanical-fg text-opacity-70 hover:text-botanical-accent transition-colors duration-300">
@@ -41,7 +41,7 @@ function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="font-serif text-xl text-botanical-fg mb-6">Company</h3>
+                        <h3 className="font-serif text-xl text-botanical-fg mb-4">Company</h3>
                         <ul className="space-y-3">
                             <li>
                                 <a href="#" className="text-botanical-fg text-opacity-70 hover:text-botanical-accent transition-colors duration-300">
@@ -67,7 +67,7 @@ function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="font-serif text-xl text-botanical-fg mb-6">Legal</h3>
+                        <h3 className="font-serif text-xl text-botanical-fg mb-4">Legal</h3>
                         <ul className="space-y-3">
                             <li>
                                 <a href="#" className="text-botanical-fg text-opacity-70 hover:text-botanical-accent transition-colors duration-300">
@@ -83,7 +83,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 border-t border-botanical-border">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-6 border-t border-botanical-border">
                     <div>
                         <h4 className="font-serif text-lg text-botanical-fg mb-4">Contact Us</h4>
                         <div className="space-y-3">
@@ -134,7 +134,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-botanical-border text-center">
+                <div className="pt-4 border-t border-botanical-border text-center">
                     <p className="text-botanical-fg text-opacity-60 text-sm">
                         &copy; 2024 Premium Store. All rights reserved. | Crafted with care
                     </p>

@@ -9,7 +9,7 @@ const Cart = () => {
 
   if (cartItems.length === 0) {
     return (
-      <div className="w-full md:w-[85%] min-h-screen bg-botanical-bg flex flex-col justify-center items-center p-8">
+      <div className="w-full md:w-full min-h-screen bg-botanical-bg flex flex-col justify-center items-center p-8">
         <ShoppingBag size={64} className="text-botanical-secondary mb-6" />
         <h1 className="font-serif text-5xl text-botanical-fg mb-4 text-center">Your Cart is <span className="italic text-botanical-accent">Empty</span></h1>
         <p className="text-botanical-fg text-opacity-60 mb-8 text-lg text-center">Explore our curated collection and add some items</p>

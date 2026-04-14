@@ -14,6 +14,7 @@ function Home() {
 
     return products ? (
         <>
+        <div className="flex h-screen"> 
             <Nav products={products} />
             <div className="w-full md:w-[85%] h-full p-4 md:p-8 overflow-y-auto bg-botanical-bg">
                 <div className="max-w-7xl mx-auto">
@@ -62,6 +63,7 @@ function Home() {
                         </div>
                     )}
                 </div>
+            </div>
             </div>
         </>
     ) : (
