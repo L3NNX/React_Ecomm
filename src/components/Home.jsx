@@ -24,32 +24,32 @@ function Home() {
                         <p className="text-botanical-fg text-opacity-70 text-lg">Discover our thoughtfully selected collection</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-                        {filteredProducts.map((p, idx) => (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {filteredProducts.map((p) => (
                             <Link
                                 key={p.id}
                                 to={`/details/${p.id}`}
-                                className={`botanical-card group overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 ${idx % 2 === 1 ? 'md:translate-y-12' : ''}`}
+                                className="botanical-card group overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 h-full"
                             >
-                                <div className="relative h-64 md:h-72 overflow-hidden bg-botanical-secondary bg-opacity-20">
+                                <div className="relative w-full h-48 overflow-hidden bg-botanical-secondary bg-opacity-20">
                                     <img
                                         src={p.image}
                                         alt={p.title}
-                                        className="w-full h-full object-cover rounded-t-[40px] group-hover:scale-105 transition-transform duration-700 ease-out"
+                                        className="w-full h-full object-contain p-4 rounded-t-[40px] group-hover:scale-105 transition-transform duration-700 ease-out"
                                     />
                                 </div>
 
-                                <div className="p-6 flex flex-col flex-grow">
+                                <div className="p-4 flex flex-col flex-grow">
                                     <div className="flex-grow">
-                                        <h3 className="font-serif text-xl md:text-2xl text-botanical-fg line-clamp-2 mb-2 group-hover:text-botanical-accent transition-colors duration-300">
+                                        <h3 className="font-serif text-base text-botanical-fg line-clamp-2 mb-2 group-hover:text-botanical-accent transition-colors duration-300">
                                             {p.title}
                                         </h3>
-                                        <p className="text-sm text-botanical-fg text-opacity-60 capitalize mb-4">{p.category}</p>
+                                        <p className="text-xs text-botanical-fg text-opacity-60 capitalize mb-3">{p.category}</p>
                                     </div>
 
                                     <div className="flex items-center justify-between mt-auto">
-                                        <span className="font-serif text-2xl text-botanical-accent">${p.price}</span>
-                                        <ShoppingCart size={20} className="text-botanical-primary group-hover:text-botanical-accent transition-colors duration-300" />
+                                        <span className="font-serif text-lg text-botanical-accent">${p.price}</span>
+                                        <ShoppingCart size={18} className="text-botanical-primary group-hover:text-botanical-accent transition-colors duration-300" />
                                     </div>
                                 </div>
                             </Link>
