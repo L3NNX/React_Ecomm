@@ -16,10 +16,10 @@ function Landing() {
             {/* Header - Botanical Style */}
             <header className="sticky top-0 z-40 border-b border-botanical-border bg-botanical-bg backdrop-blur-sm bg-opacity-95">
                 <div className="max-w-7xl mx-auto px-4 md:px-8 py-5 flex items-center justify-between">
-                    <Link to="/" className="font-serif text-3xl text-botanical-fg flex items-center gap-2">
-                        <Leaf className="text-botanical-primary" size={28} />
-                        Botanical Store
-                    </Link>
+                    <Link to="/" className="font-serif text-3xl text-botanical-fg flex items-center gap-3">
+    <img src="/botanica-logo.svg" alt="Botanica" className="w-10 h-10" />
+    Botanica
+</Link>
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex items-center gap-6">

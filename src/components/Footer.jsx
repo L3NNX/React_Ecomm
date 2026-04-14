@@ -136,7 +136,7 @@ function Footer() {
 
                 <div className="pt-4 border-t border-botanical-border text-center">
                     <p className="text-botanical-fg text-opacity-60 text-sm">
-                        &copy; 2024 Premium Store. All rights reserved. | Crafted with care
+                        &copy; 2024 Botanica. All rights reserved. | Crafted with care
                     </p>
                 </div>
             </div>
