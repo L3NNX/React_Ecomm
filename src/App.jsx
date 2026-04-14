@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Landing from "./components/Landing"
 import Home  from "./components/Home"
 import Details from './components/Details'
 import Edit from './components/Edit'
@@ -18,7 +19,8 @@ function App() {
       />
 
       <Routes>
-        <Route path ="/" element={<Home/>} />
+        <Route path ="/" element={<Landing/>} />
+        <Route path ="/products" element={<Home/>} />
         <Route path ="/create" element={<Create/>} />
         <Route path ="/details/:id" element={<Details/>} />
         <Route path ="/edit/:id" element={<Edit/>} />
